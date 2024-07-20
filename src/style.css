@@ -1,0 +1,21 @@
+:root {
+  font-family:"Inria Sans", "BIZ UDGothic";
+
+    font-size: 16px;
+    --logo-color: #2F4669; 
+    --bg-color: #30415E;
+    --text-color: #112233;
+    --border-color: #AAA;
+    --button-color: #277ccc;
+    --drop-shadow-color: #11223340;
+
+}
+
+button{
+  font-family:"Inria Sans", "BIZ UDGothic";
+}
+
+body{
+  margin: 0;
+  color: var(--text-color);
+}
