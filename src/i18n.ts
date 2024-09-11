@@ -5,6 +5,7 @@ const messages = {
     ja: {
         name: '名前',
         furigana: 'フリガナ',
+        birthdate: '生年月日',
         email: 'メールアドレス',
         pass: 'パスワード',
         region: '在住地域',
@@ -17,6 +18,7 @@ const messages = {
     en: {
         name: 'Name',
         furigana: 'Furigana',
+        birthdate: 'birth date',
         email: 'Email address',
         pass: 'Password',
         region: 'Region of residence',

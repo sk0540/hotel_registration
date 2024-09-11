@@ -1,7 +1,13 @@
 <script setup lang="ts">
+const props = defineProps({
+    name: {
+        type: String,
+        required: true,
+    }
+});
 </script>
 <template>
-    <select></select>
+    <select :id="name" :name="name" />
 </template>
 <style scoped>
 select {

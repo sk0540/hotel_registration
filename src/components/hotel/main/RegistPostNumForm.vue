@@ -19,7 +19,7 @@ const props = defineProps({
     <form>
         <FormLabel :item="id" />
         <div class="post-input">
-            <FormInput :width=200 />
+            <FormInput :width=200 mode="numeric" :name="id" :required="required" />
             <FormButton></FormButton>
         </div>
     </form>
@@ -29,7 +29,7 @@ form {
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    margin: 0.875rem 0;
+    margin: 1rem 0;
 }
 
 .post-input {

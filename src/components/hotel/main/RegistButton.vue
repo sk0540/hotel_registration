@@ -1,13 +1,20 @@
 <script setup lang="ts">
+
+
+
+const handleSubmit = () => {
+    console.log('Form submitted:');
+}
 </script>
 <template>
-    <button>
+    <button type="submit">
         <span>登録</span>
         <span>Register</span>
     </button>
 </template>
 <style scoped>
 button {
+    align-self: center;
     width: 18.75rem;
     font-size: 1.375rem;
     line-height: 3rem;

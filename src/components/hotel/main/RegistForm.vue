@@ -13,11 +13,21 @@ const props = defineProps({
     }
 });
 
+const getMode = (id: string) => {
+    switch (id) {
+        case 'email':
+            return 'email';
+        case 'tel':
+            return 'tel';
+        default:
+            return 'text';
+    }
+};
 </script>
 <template>
     <form>
         <FormLabel :item="id" />
-        <FormInput />
+        <FormInput :name="id" :mode="getMode(id)" :required="required" />
     </form>
 </template>
 <style scoped>
@@ -25,6 +35,6 @@ form {
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    margin: 0.875rem 0;
+    margin: 1rem 0;
 }
 </style>
